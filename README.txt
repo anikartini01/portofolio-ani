@@ -1,19 +1,27 @@
-PORTOFOLIO ANI KARTINI
+# Portofolio Ani Kartini
 
-Cara menjalankan:
-1. Ekstrak file ZIP.
-2. Buka folder portofolio_ani di Visual Studio Code.
-3. Klik kanan index.html lalu pilih Open with Live Server (jika ekstensi Live Server tersedia).
-   Alternatif: klik dua kali index.html untuk membuka langsung di browser.
+Website portofolio pribadi yang menampilkan profil, keahlian, dan project pengembangan perangkat lunak yang telah dikerjakan.
 
-File utama:
-- index.html : struktur dan konten website
-- style.css  : tampilan, warna, layout, dan responsive design
-- script.js  : menu mobile, salin email, dan pembesaran screenshot
-- assets/    : screenshot SIPOS serta SINEMU web dan mobile
+## Teknologi
+- HTML
+- CSS
+- JavaScript
 
-Catatan:
-- Website ini statis, tidak membutuhkan PHP, Laravel, atau database untuk dijalankan.
-- Email kontak yang dipakai: kartiniani999@gmail.com
-- Link GitHub belum ditambahkan karena URL repository yang akan dipublikasikan belum dikonfirmasi.
-- SINEMU ditulis sebagai project yang masih dikembangkan; fitur AI dijelaskan berdasarkan proposal Proyek 3.
+## Project
+
+### 1. SIPOS — Sistem Informasi Posyandu
+Website untuk membantu pengelolaan data balita, ibu hamil, pemeriksaan, jadwal kegiatan, dan laporan Posyandu.
+
+### 2. SINEMU — Sistem Informasi Barang Hilang dan Temuan
+Platform web dan mobile untuk membantu masyarakat melaporkan, mencari, dan mengklaim barang hilang maupun barang temuan. Project ini masih dalam tahap pengembangan, termasuk penyempurnaan fitur AI.
+
+## Kontak
+- Email: kartiniani999@gmail.com
+- GitHub: [anikartini01](https://github.com/anikartini01)
+
+## Menjalankan Website
+Website dapat dijalankan langsung melalui browser atau menggunakan ekstensi Live Server di Visual Studio Code.
+
+---
+
+© 2026 Ani Kartini
