@@ -1,91 +1,80 @@
-const menuToggle = document.querySelector(".menu-toggle");
-const nav = document.querySelector(".nav");
+document.addEventListener("DOMContentLoaded", () => {
+  // 1. Mobile Menu Logic
+  const menuToggle = document.querySelector(".menu-toggle");
+  const nav = document.querySelector(".nav");
 
-// Menu navigasi, terutama untuk tampilan HP
-menuToggle?.addEventListener("click", () => {
-  if (!nav) return;
-
-  const isOpen = nav.classList.toggle("open");
-
-  menuToggle.setAttribute("aria-expanded", String(isOpen));
-  menuToggle.setAttribute(
-    "aria-label",
-    isOpen ? "Tutup navigasi" : "Buka navigasi",
-  );
-});
-
-// Tutup menu setelah salah satu tautan dipilih
-nav?.querySelectorAll("a").forEach((link) => {
-  link.addEventListener("click", () => {
-    nav.classList.remove("open");
-    menuToggle?.setAttribute("aria-expanded", "false");
-    menuToggle?.setAttribute("aria-label", "Buka navigasi");
-  });
-});
-
-// Tahun footer otomatis
-const yearElement = document.getElementById("year");
-
-if (yearElement) {
-  yearElement.textContent = new Date().getFullYear();
-}
-
-// Tombol salin email
-document
-  .querySelector(".copy-button")
-  ?.addEventListener("click", async (event) => {
-    const button = event.currentTarget;
-    const email = button.dataset.copy;
-
-    if (!email) return;
-
-    try {
-      await navigator.clipboard.writeText(email);
-      button.textContent = "Email tersalin ✓";
-    } catch {
-      window.location.href = `mailto:${email}`;
-    }
-  });
-
-// Pratinjau gambar project
-const lightbox = document.querySelector(".lightbox");
-const lightboxImg = lightbox?.querySelector("img");
-const lightboxCaption = lightbox?.querySelector("p");
-const lightboxClose = lightbox?.querySelector(".lightbox-close");
-
-function closeLightbox() {
-  if (!lightbox) return;
-
-  lightbox.hidden = true;
-  document.body.style.overflow = "";
-}
-
-if (lightbox && lightboxImg && lightboxCaption) {
-  document.querySelectorAll(".shot img").forEach((img) => {
-    img.addEventListener("click", () => {
-      lightboxImg.src = img.src;
-      lightboxImg.alt = img.alt;
-
-      lightboxCaption.textContent =
-        img.closest("figure")?.querySelector("figcaption b")?.textContent ||
-        img.alt;
-
-      lightbox.hidden = false;
-      document.body.style.overflow = "hidden";
+  if (menuToggle && nav) {
+    menuToggle.addEventListener("click", () => {
+      const isOpen = nav.classList.toggle("open");
+      menuToggle.setAttribute("aria-expanded", String(isOpen));
     });
-  });
 
-  lightboxClose?.addEventListener("click", closeLightbox);
+    nav.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        nav.classList.remove("open");
+        menuToggle.setAttribute("aria-expanded", "false");
+      });
+    });
+  }
 
-  lightbox.addEventListener("click", (event) => {
-    if (event.target === lightbox) {
-      closeLightbox();
-    }
-  });
+  // 2. Copy Email Logic
+  const copyBtn = document.querySelector(".copy-button");
+  if (copyBtn) {
+    copyBtn.addEventListener("click", async () => {
+      const email = copyBtn.dataset.copy;
+      if (!email) return;
+      try {
+        await navigator.clipboard.writeText(email);
+        const originalText = copyBtn.textContent;
+        copyBtn.textContent = "Email tersalin ✓";
+        setTimeout(() => {
+          copyBtn.textContent = originalText;
+        }, 2000);
+      } catch (err) {
+        window.location.href = `mailto:${email}`;
+      }
+    });
+  }
 
-  document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape") {
-      closeLightbox();
-    }
-  });
-}
+  // 3. Lightbox Logic (Pop-up Gambar)
+  const lightbox = document.querySelector(".lightbox");
+  const lightboxImg = lightbox?.querySelector("img");
+  const lightboxCaption = lightbox?.querySelector("p");
+  const lightboxClose = lightbox?.querySelector(".lightbox-close");
+
+  if (lightbox) {
+    lightbox.hidden = true;
+    lightbox.style.display = "none";
+  }
+
+  function closeLightbox() {
+    if (!lightbox) return;
+    lightbox.hidden = true;
+    lightbox.style.display = "none";
+    document.body.style.overflow = "";
+  }
+
+  if (lightbox && lightboxImg && lightboxCaption) {
+    document.querySelectorAll(".shot img").forEach((img) => {
+      img.addEventListener("click", () => {
+        lightboxImg.src = img.src;
+        lightboxImg.alt = img.alt;
+        const captionText =
+          img.closest("figure")?.querySelector("figcaption b")?.textContent ||
+          img.alt;
+        lightboxCaption.textContent = captionText;
+        lightbox.hidden = false;
+        lightbox.style.display = "flex";
+        document.body.style.overflow = "hidden";
+      });
+    });
+
+    lightboxClose?.addEventListener("click", closeLightbox);
+    lightbox.addEventListener("click", (event) => {
+      if (event.target === lightbox) closeLightbox();
+    });
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") closeLightbox();
+    });
+  }
+});

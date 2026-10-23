@@ -3,21 +3,25 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#fbf4f1" />
+    <meta name="theme-color" content="#ffffff" />
     <meta
       name="description"
-      content="Portofolio Ani Kartini — pengembangan perangkat lunak, web dan mobile."
+      content="Portofolio Ani Kartini — pengembangan perangkat lunak, web dan mobile development."
     />
-    <title>Ani Kartini — Software Development Portfolio</title>
+    <title>Ani Kartini | Portfolio</title>
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- Header / Navbar -->
     <header class="site-header">
       <a class="brand" href="#home" aria-label="Ani Kartini beranda">
         <img
@@ -35,160 +39,224 @@
       >
         ☰
       </button>
+
       <nav class="nav">
-        <a href="#tentang">Tentang</a><a href="#keahlian">Keahlian</a
-        ><a href="#project">Project</a><a href="#kontak">Kontak</a>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#project">Project</a>
+        <a href="#contact">Contact</a>
       </nav>
     </header>
+
     <main>
+      <!-- Hero Section -->
       <section class="hero section-wrap" id="home">
-        <div class="profile-photo">
-          <img src="images/foto-ani.jpg" alt="Foto Ani Kartini" />
-        </div>
         <div class="hero-copy">
           <div class="eyebrow">
-            <span class="eyebrow-dot"></span> SOFTWARE DEVELOPMENT · WEB &
-            MOBILE
+            <span class="eyebrow-dot"></span> SOFTWARE ENGINEERING STUDENT · WEB
+            & MOBILE
           </div>
-          <h1>
-            Membangun solusi digital yang
-            <span class="serif-accent">bermakna.</span>
-          </h1>
+          <h1>Ani Kartini</h1>
           <p class="hero-text">
-            Halo, saya <strong>Ani Kartini</strong>, mahasiswa Rekayasa
-            Perangkat Lunak yang tertarik pada pengembangan aplikasi web dan
-            mobile, mulai dari memahami kebutuhan hingga membangun pengalaman
-            digital yang mudah digunakan.
+            Halo, saya <strong>Ani Kartini</strong>, mahasiswa D4 Rekayasa
+            Perangkat Lunak di Politeknik Negeri Indramayu. Saya memiliki
+            ketertarikan besar pada pengembangan web dan mobile, mulai dari
+            analisis kebutuhan, perancangan sistem, implementasi, hingga
+            pengujian.
           </p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#project"
-              >Jelajahi project <span aria-hidden="true">↗</span></a
-            ><a class="text-link" href="#tentang"
-              >Kenali saya <span aria-hidden="true">↓</span></a
-            >
+            <a class="button button-primary" href="#project">
+              View project <span aria-hidden="true">↗</span>
+            </a>
+            <a class="text-link" href="#about">
+              Kenali saya <span aria-hidden="true">↓</span>
+            </a>
           </div>
-          <div class="hero-meta">
-            <span><i class="meta-icon">⌘</i> Software Development</span
-            ><span><i class="meta-icon">⌖</i> Indramayu, Indonesia</span>
+        </div>
+
+        <div class="hero-photo">
+          <div class="photo-frame">
+            <img src="images/foto-ani.jpg" alt="Foto Ani Kartini" />
           </div>
+          <div class="photo-blob"></div>
         </div>
       </section>
 
-      <section class="intro-band" id="tentang">
-        <div class="section-wrap intro-grid">
-          <p class="eyebrow">01 / TENTANG SAYA</p>
-          <div>
-            <h2>Sedikit tentang saya.</h2>
-            <p>
-              Saya Ani Kartini, mahasiswa Rekayasa Perangkat Lunak yang sedang
-              mendalami pengembangan web dan mobile. Di sini, saya mengumpulkan
-              beberapa project yang pernah saya kerjakan selama belajar, mulai
-              dari proses perancangan hingga implementasi.
-            </p>
-          </div>
+      <!-- Tentang Section -->
+      <section class="section section-wrap intro-band" id="about">
+        <p class="eyebrow">01 / GET TO KNOW</p>
+        <div class="about-card">
+          <h2>About Me</h2>
+          <p>
+            Saya memiliki pengalaman mengembangkan proyek berbasis website dan
+            mobile melalui proses analisis kebutuhan, perancangan sistem,
+            implementasi, hingga pengujian. Saya memiliki dasar dalam PHP,
+            Laravel, JavaScript, Dart, Flutter, dan MySQL, serta terbiasa
+            bekerja secara kolaboratif. Saya juga memiliki kemampuan
+            <em>problem solving</em> dan cepat beradaptasi dengan teknologi
+            baru.
+          </p>
         </div>
       </section>
 
-      <section class="section-wrap skills-section">
+      <!-- Keahlian Section -->
+      <section class="section section-wrap" id="skills">
         <div class="section-heading">
-          <p class="eyebrow">02 / FOKUS & KEAHLIAN</p>
-          <h2>Teknologi yang saya gunakan</h2>
+          <p class="eyebrow">02 / SKILLS</p>
+          <h2>My Current Skills</h2>
           <p>
             Dasar teknis yang saya terapkan dalam proses pengembangan project.
           </p>
         </div>
-        <div class="skills-grid" id="keahlian">
+
+        <div class="skills-grid">
           <article class="skill-card">
             <div class="skill-icon pink-icon">{ }</div>
-            <h3>Web Development</h3>
-            <p>Membangun antarmuka dan logika aplikasi berbasis web.</p>
+            <h3>Programming & Framework</h3>
+            <p>
+              Membangun antarmuka dan logika aplikasi berbasis web & mobile.
+            </p>
             <div class="tags">
               <span>PHP</span><span>Laravel</span><span>JavaScript</span
-              ><span>HTML & CSS</span><span>Bootstrap</span>
+              ><span>Dart</span><span>Flutter</span><span>Bootstrap</span>
             </div>
           </article>
+
           <article class="skill-card">
-            <div class="skill-icon yellow-icon">▯</div>
-            <h3>Mobile Development</h3>
-            <p>Mengembangkan aplikasi mobile menggunakan satu basis kode.</p>
-            <div class="tags"><span>Dart</span><span>Flutter</span></div>
-          </article>
-          <article class="skill-card">
-            <div class="skill-icon lilac-icon">▦</div>
-            <h3>Data & Kolaborasi</h3>
-            <p>Mengelola data dan mendukung proses pengembangan bersama tim.</p>
+            <div class="skill-icon yellow-icon">▦</div>
+            <h3>Database & Tools</h3>
+            <p>Mengelola basis data dan mendukung kolaborasi tim.</p>
             <div class="tags">
               <span>MySQL</span><span>Git</span><span>GitHub</span>
             </div>
           </article>
 
           <article class="skill-card">
-            <div class="skill-icon green-icon">⌘</div>
-            <h3>Analisis & Perancangan Sistem</h3>
+            <div class="skill-icon lilac-icon">⌘</div>
+            <h3>System Design</h3>
+            <p>Merancang alur dan struktur sistem sebelum diimplementasikan.</p>
+            <div class="tags">
+              <span>Analisis Kebutuhan</span><span>Use Case</span
+              ><span>ERD</span><span>Flowchart</span>
+            </div>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-icon green-icon">📝</div>
+            <h3>Testing & QA</h3>
             <p>
-              Membuat diagram untuk menggambarkan alur proses, struktur data,
-              dan rancangan sistem sebelum dikembangkan menggunakan draw io.
+              Membuat skenario pengujian untuk memastikan sistem berjalan sesuai
+              kebutuhan.
             </p>
             <div class="tags">
-              <span>Use Case Diagram</span>
-              <span>Class Diagram</span>
-              <span>Activity Diagram</span>
-              <span>Sequence Diagram</span>
-              <span>Flowchart</span>
-              <span>ERD</span>
+              <span>Test Case</span><span>Black-box Testing</span
+              ><span>UAT</span>
             </div>
           </article>
         </div>
       </section>
-      <section class="projects-section" id="project">
+
+      <!-- Pendidikan Section (SUDAH DIPERBARUI) -->
+      <section class="section section-wrap" id="education">
+        <div class="section-heading" style="margin-bottom: 24px">
+          <p class="eyebrow" style="margin-bottom: 0">03 / EDUCATION</p>
+        </div>
+
+        <div class="education-card">
+          <div class="edu-icon">🎓</div>
+          <div class="edu-content">
+            <h3>Politeknik Negeri Indramayu</h3>
+            <p class="edu-major">D4 Rekayasa Perangkat Lunak</p>
+            <p class="edu-date">Agustus 2024 — Sekarang</p>
+            <p class="edu-desc">
+              Mendalami pengembangan perangkat lunak melalui pembelajaran
+              Rekayasa Kebutuhan, Desain Perangkat Lunak, Basis Data,
+              Pemrograman Web, Struktur Data, Sistem Operasi, Jaringan Komputer,
+              dan Software Engineering.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Project Section -->
+      <section class="section projects-section" id="project">
         <div class="section-wrap">
-          <div class="section-heading project-heading">
-            <p class="eyebrow">03 / PROJECT TERPILIH</p>
-            <h2>Beberapa hal yang telah saya bangun.</h2>
+          <div class="section-heading">
+            <p class="eyebrow">04 / SELECTED WORK</p>
+            <h2>Featured Projects.</h2>
             <p>
               Project akademik yang berangkat dari kebutuhan nyata dan
               dikembangkan secara bertahap.
             </p>
           </div>
-          <article class="project-block project-sipos">
+
+          <!-- Project 1: SIPOS -->
+          <article class="project-block">
             <div class="project-info">
               <div class="project-number">
                 PROJECT 01 <span>·</span> SEP — DES 2025
               </div>
               <h3>
-                SIPOS<span class="project-period"
-                  >Sistem Informasi Posyandu</span
-                >
+                SIPOS
+                <span class="project-period">Sistem Informasi Posyandu</span>
               </h3>
               <p class="project-description">
-                Sistem informasi berbasis website untuk membantu digitalisasi
-                pengelolaan data Posyandu, khususnya data balita dan ibu hamil.
-                Informasi peserta, pemeriksaan, jadwal kegiatan, serta ringkasan
-                statistik disajikan dalam satu sistem.
+                Sistem informasi berbasis website untuk mendigitalisasi
+                pengelolaan data Posyandu (ibu hamil dan balita), mencakup data
+                kesehatan, jadwal, dashboard statistik, hingga ekspor PDF.
               </p>
-              <h4>Fitur utama</h4>
+
+              <h4>Peran & Kontribusi Saya:</h4>
               <ul class="feature-list">
                 <li>
-                  Dashboard statistik peserta dan visualisasi data kesehatan.
+                  <b>Analisis Kebutuhan:</b> Menggali kebutuhan pengguna dan
+                  menyusun spesifikasi sistem.
                 </li>
-                <li>Pengelolaan data balita dan ibu hamil.</li>
-                <li>Pencatatan pemeriksaan serta jadwal kegiatan Posyandu.</li>
-                <li>Pembuatan dan ekspor laporan PDF.</li>
+                <li>
+                  <b>System Design:</b> Merancang Use Case, ERD, Activity, dan
+                  Class Diagram.
+                </li>
+                <li>
+                  <b>Quality Assurance:</b> Menyusun skenario
+                  <i>Test Case</i> untuk memastikan fitur berjalan tanpa
+                  <i>error</i>.
+                </li>
               </ul>
+
               <div class="tags project-tags">
                 <span>PHP</span><span>MySQL</span><span>HTML</span
                 ><span>CSS</span><span>JavaScript</span>
               </div>
-              <p class="project-note">
-                Fokus: digitalisasi pencatatan dan penyajian informasi kesehatan
-                Posyandu.
-              </p>
+
+              <div class="project-links">
+                <a
+                  href="https://github.com/madsobirin/proyek1.git"
+                  target="_blank"
+                  class="btn-repo"
+                >
+                  <svg
+                    viewBox="0 0 16 16"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+                    ></path>
+                  </svg>
+                  Lihat Repository
+                </a>
+              </div>
             </div>
-            <div class="project-gallery sipos-gallery">
-              <figure class="shot shot-large">
+
+            <div class="project-gallery">
+              <figure class="shot">
                 <img
                   src="assets/sipos-dashboard.png"
-                  alt="Dashboard SIPOS menampilkan total balita dan ibu hamil serta grafik status kesehatan"
+                  alt="Dashboard SIPOS"
                   loading="lazy"
                 />
                 <figcaption>
@@ -202,7 +270,7 @@
               <figure class="shot">
                 <img
                   src="assets/sipos-pemeriksaan.png"
-                  alt="Halaman pemeriksaan dan jadwal Posyandu SIPOS"
+                  alt="Pemeriksaan SIPOS"
                   loading="lazy"
                 />
                 <figcaption>
@@ -215,11 +283,11 @@
               <figure class="shot">
                 <img
                   src="assets/sipos-statistik.png"
-                  alt="Tampilan statistik SIPOS"
+                  alt="Statistik SIPOS"
                   loading="lazy"
                 />
                 <figcaption>
-                  <b>Data kesehatan</b
+                  <b>Data Kesehatan</b
                   ><span
                     >Informasi pemeriksaan disajikan agar lebih mudah
                     dipantau.</span
@@ -228,175 +296,204 @@
               </figure>
             </div>
           </article>
-          <article class="project-block project-sinemu">
+
+          <!-- Project 2: SINEMU -->
+          <article class="project-block">
             <div class="project-info">
               <div class="project-number">
                 PROJECT 02 <span>·</span> JAN 2026 — SEKARANG
               </div>
               <h3>
-                SINEMU<span class="project-period"
+                SINEMU
+                <span class="project-period"
                   >Sistem Informasi Barang Hilang dan Temuan</span
                 >
               </h3>
               <p class="project-description">
-                Solusi digital untuk membantu masyarakat Kabupaten Indramayu
-                melaporkan, mencari, dan mengklaim barang hilang maupun barang
-                temuan. SINEMU dikembangkan dalam dua platform yang saling
-                melengkapi: website untuk akses informasi dan pengelolaan, serta
-                aplikasi mobile untuk kemudahan akses pengguna.
+                Solusi digital (Web & Mobile) untuk membantu masyarakat
+                Indramayu melaporkan, mencari, dan mengklaim barang hilang
+                maupun temuan secara terintegrasi.
               </p>
-              <h4>Fitur utama</h4>
+
+              <h4>Peran & Kontribusi Saya:</h4>
               <ul class="feature-list">
-                <li>Pelaporan barang hilang dan barang temuan.</li>
                 <li>
-                  Pencarian barang dengan filter kategori, waktu, dan wilayah.
+                  <b>Mobile Development:</b> Mengembangkan antarmuka aplikasi
+                  Android menggunakan Flutter (Dart) agar terintegrasi dengan
+                  sistem web.
                 </li>
-                <li>Pengajuan klaim serta pemantauan status laporan.</li>
                 <li>
-                  Dashboard pengelola untuk meninjau laporan dan verifikasi
-                  klaim.
+                  <b>Quality Assurance:</b> Menyusun skenario pengujian (<i
+                    >test case</i
+                  >) untuk memastikan fitur berjalan tanpa error.
                 </li>
-                <li>Informasi lokasi pengambilan dan petunjuk arah.</li>
               </ul>
+
               <div class="tags project-tags">
-                <span>PHP</span><span>Laravel</span><span>Bootstrap</span
-                ><span>JavaScript</span><span>MySQL</span><span>Dart</span
-                ><span>Flutter</span><span>Git & GitHub</span>
+                <span>Laravel</span><span>Flutter</span><span>MySQL</span
+                ><span>Git</span>
               </div>
+
+              <div class="project-links">
+                <a
+                  href="https://github.com/Chainz-bit/sinemu-pro-2.git"
+                  target="_blank"
+                  class="btn-repo"
+                >
+                  <svg
+                    viewBox="0 0 16 16"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+                    ></path>
+                  </svg>
+                  Repo Web (Laravel)
+                </a>
+                <a
+                  href="https://github.com/sandiwira20/sinemumobile.git"
+                  target="_blank"
+                  class="btn-repo"
+                >
+                  <svg
+                    viewBox="0 0 16 16"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+                    ></path>
+                  </svg>
+                  Repo Mobile (Flutter)
+                </a>
+              </div>
+
               <div class="development-note">
                 <span class="status-dot"></span>
                 <div>
                   <b>Pengembangan berlanjut</b>
                   <p>
                     Fitur AI sedang dikembangkan sebagai lanjutan project,
-                    mencakup chatbot AI berbasis web dan dukungan analisis klaim
-                    seperti pencocokan data, skor kemiripan, serta rekomendasi
-                    untuk membantu proses verifikasi. Hasil keputusan klaim
-                    tetap ditinjau oleh administrator.
+                    mencakup chatbot AI berbasis web dan dukungan analisis
+                    klaim.
                   </p>
                 </div>
               </div>
             </div>
-            <div class="sinemu-platforms">
-              <div class="platform-heading">
-                <span class="platform-icon">▱</span>
-                <div>
-                  <h4>Platform Website</h4>
-                  <p>
-                    Tampilan pencarian publik, lokasi, dan dashboard
-                    pengelolaan.
-                  </p>
-                </div>
+
+            <div class="project-gallery sinemu-gallery">
+              <div class="platform-label">Platform Website</div>
+              <figure class="shot">
+                <img
+                  src="assets/sinemu-beranda-web.png"
+                  alt="Beranda SINEMU"
+                  loading="lazy"
+                />
+                <figcaption>
+                  <b>Beranda & Pencarian</b
+                  ><span>Memulai pencarian atau membuat laporan barang.</span>
+                </figcaption>
+              </figure>
+              <figure class="shot">
+                <img
+                  src="assets/sinemu-lokasi-web.png"
+                  alt="Lokasi SINEMU"
+                  loading="lazy"
+                />
+                <figcaption>
+                  <b>Lokasi Pengambilan</b
+                  ><span>Informasi lokasi pengelola dan petunjuk arah.</span>
+                </figcaption>
+              </figure>
+              <figure class="shot">
+                <img
+                  src="assets/sinemu-dashboard-user.png"
+                  alt="Dashboard User SINEMU"
+                  loading="lazy"
+                />
+                <figcaption>
+                  <b>Dashboard Pengguna</b
+                  ><span>Melihat aktivitas laporan dan pengajuan klaim.</span>
+                </figcaption>
+              </figure>
+              <figure class="shot">
+                <img
+                  src="assets/sinemu-dashboard-pengelola.png"
+                  alt="Dashboard Pengelola SINEMU"
+                  loading="lazy"
+                />
+                <figcaption>
+                  <b>Dashboard Pengelola</b
+                  ><span>Memantau laporan dan proses verifikasi.</span>
+                </figcaption>
+              </figure>
+
+              <div class="platform-label mobile-label">
+                Platform Mobile — Android
               </div>
-              <div class="sinemu-web-gallery">
-                <figure class="shot">
-                  <img
-                    src="assets/sinemu-beranda-web.png"
-                    alt="Halaman utama SINEMU web dengan pencarian dan filter barang"
-                    loading="lazy"
-                  />
-                  <figcaption>
-                    <b>Beranda & pencarian</b
-                    ><span>Memulai pencarian atau membuat laporan barang.</span>
-                  </figcaption>
-                </figure>
-                <figure class="shot">
-                  <img
-                    src="assets/sinemu-lokasi-web.png"
-                    alt="Halaman peta lokasi pengambilan SINEMU"
-                    loading="lazy"
-                  />
-                  <figcaption>
-                    <b>Lokasi pengambilan</b
-                    ><span>Informasi lokasi pengelola dan petunjuk arah.</span>
-                  </figcaption>
-                </figure>
-                <figure class="shot">
-                  <img
-                    src="assets/sinemu-dashboard-user.png"
-                    alt="Dashboard pengguna SINEMU"
-                    loading="lazy"
-                  />
-                  <figcaption>
-                    <b>Dashboard pengguna</b
-                    ><span>Melihat aktivitas laporan dan pengajuan klaim.</span>
-                  </figcaption>
-                </figure>
-                <figure class="shot">
-                  <img
-                    src="assets/sinemu-dashboard-pengelola.png"
-                    alt="Dashboard pengelola barang SINEMU"
-                    loading="lazy"
-                  />
-                  <figcaption>
-                    <b>Dashboard pengelola</b
-                    ><span>Memantau laporan dan proses verifikasi.</span>
-                  </figcaption>
-                </figure>
-              </div>
-              <div class="platform-heading mobile-heading">
-                <span class="platform-icon mobile-icon">▯</span>
-                <div>
-                  <h4>Platform Mobile — Android</h4>
-                  <p>
-                    Akses melalui perangkat mobile untuk melaporkan dan
-                    menemukan barang.
-                  </p>
-                </div>
-              </div>
-              <div class="sinemu-mobile-gallery">
-                <figure class="shot mobile-shot">
-                  <img
-                    src="assets/sinemu-mobile-login.png"
-                    alt="Halaman login aplikasi mobile SINEMU"
-                    loading="lazy"
-                  />
-                  <figcaption>
-                    <b>Login & registrasi</b
-                    ><span
-                      >Akses akun pengguna sebelum menggunakan layanan.</span
-                    >
-                  </figcaption>
-                </figure>
-                <figure class="shot mobile-shot">
-                  <img
-                    src="assets/sinemu-mobile-beranda.png"
-                    alt="Beranda aplikasi mobile SINEMU menampilkan barang temuan dan hilang"
-                    loading="lazy"
-                  />
-                  <figcaption>
-                    <b>Beranda mobile</b
-                    ><span
-                      >Menelusuri barang temuan dan barang hilang dari
-                      ponsel.</span
-                    >
-                  </figcaption>
-                </figure>
-              </div>
+              <figure class="shot mobile-shot">
+                <img
+                  src="assets/sinemu-mobile-login.png"
+                  alt="Login SINEMU Mobile"
+                  loading="lazy"
+                />
+                <figcaption>
+                  <b>Login & Registrasi</b
+                  ><span>Akses akun pengguna sebelum menggunakan layanan.</span>
+                </figcaption>
+              </figure>
+              <figure class="shot mobile-shot">
+                <img
+                  src="assets/sinemu-mobile-beranda.png"
+                  alt="Beranda SINEMU Mobile"
+                  loading="lazy"
+                />
+                <figcaption>
+                  <b>Beranda Mobile</b
+                  ><span
+                    >Menelusuri barang temuan dan barang hilang dari
+                    ponsel.</span
+                  >
+                </figcaption>
+              </figure>
             </div>
           </article>
         </div>
       </section>
 
-      <section class="contact-section section-wrap" id="kontak">
+      <!-- Contact Section -->
+      <section class="section section-wrap contact-section" id="contact">
         <div class="contact-card">
-          <div>
-            <p class="eyebrow">05 / KONTAK</p>
-            <h2>Mari terhubung.</h2>
+          <div class="contact-text">
+            <p class="eyebrow">05 / CONTACT</p>
+            <h2>Contact Me.</h2>
             <p>
               Untuk pertanyaan atau diskusi seputar project dan pengembangan
-              perangkat lunak, silakan hubungi saya melalui email atau kunjungi
-              GitHub saya.
+              perangkat lunak, silakan hubungi saya.
             </p>
           </div>
-
           <div class="contact-action">
+            <!-- Tombol CV Baru -->
+            <a
+              href="https://drive.google.com/file/d/14kWL-YWWDavXsFtD7YFnsGPR7U3rwr11/view?usp=drive_link"
+              target="_blank"
+              class="email-link cv-contact"
+            >
+              <span class="contact-label">RESUME / CV</span>
+              Lihat Curriculum Vitae
+              <span class="arrow">↗</span>
+            </a>
+
             <a class="email-link" href="mailto:kartiniani999@gmail.com">
               <span class="contact-label">EMAIL</span>
               kartiniani999@gmail.com
               <span class="arrow">↗</span>
             </a>
-
             <a
               class="email-link github-contact"
               href="https://github.com/anikartini01"
@@ -407,7 +504,6 @@
               Kunjungi profil GitHub
               <span class="arrow">↗</span>
             </a>
-
             <button
               class="copy-button"
               type="button"
@@ -420,16 +516,31 @@
       </section>
     </main>
 
+    <!-- Footer Minimalis -->
     <footer class="footer">
       <div class="section-wrap footer-inner">
-        <a class="brand" href="#home" aria-label="Portofolio Ani Kartini">
-          <span>Portofolio Ani Kartini<span class="brand-dot">.</span></span>
-        </a>
-
-        <a class="back-top" href="#home">Kembali ke atas ↑</a>
+        <p class="copyright">&copy; 2026 Ani Kartini. All rights reserved.</p>
       </div>
     </footer>
 
+    <!-- Tombol Back to Top Melayang -->
+    <a href="#home" class="back-to-top" aria-label="Kembali ke atas">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M12 19V5M5 12l7-7 7 7" />
+      </svg>
+    </a>
+
+    <!-- Lightbox -->
     <div
       class="lightbox"
       role="dialog"
@@ -437,10 +548,11 @@
       aria-label="Pratinjau gambar"
       hidden
     >
-      <button class="lightbox-close" aria-label="Tutup pratinjau">×</button
-      ><img src="" alt="" />
+      <button class="lightbox-close" aria-label="Tutup pratinjau">×</button>
+      <img src="" alt="" />
       <p></p>
     </div>
+
     <script src="script.js"></script>
   </body>
 </html>
